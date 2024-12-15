@@ -3,6 +3,9 @@
     padding: 20px;
     font-family: Arial, sans-serif;
     color: #333;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .previous-trees-title {
@@ -23,6 +26,11 @@
     padding: 15px;
     border-radius: 8px;
     background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease;
+}
+
+.previous-trees-list li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .previous-trees-list li strong {
@@ -31,7 +39,6 @@
 
 .tree-structure {
     white-space: pre-wrap;
-    /* Ensures that the tree structure text wraps properly */
     background-color: #282c34;
     color: white;
     padding: 10px;
@@ -53,6 +60,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .back-button:hover {
