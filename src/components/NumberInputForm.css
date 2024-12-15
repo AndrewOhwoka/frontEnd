@@ -5,12 +5,19 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.number-form-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .number-form-title {
     font-size: 24px;
     text-align: center;
     margin-bottom: 20px;
+    color: #333;
 }
 
 .number-field {
@@ -21,6 +28,7 @@
     font-size: 16px;
     margin-bottom: 5px;
     display: block;
+    color: #555;
 }
 
 .number-input {
@@ -29,6 +37,12 @@
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.number-input:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
 .number-error-message {
@@ -48,6 +62,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .number-submit:hover {
@@ -57,11 +72,13 @@
 .tree-display-container {
     margin-top: 30px;
     max-width: 600px;
+    text-align: center;
 }
 
 .tree-display-title {
     font-size: 20px;
     margin-bottom: 10px;
+    color: #333;
 }
 
 .tree-display {
@@ -69,6 +86,7 @@
     padding: 15px;
     border-radius: 5px;
     font-family: monospace;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .previous-trees-button-container {
@@ -84,15 +102,11 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .previous-trees-button:hover {
     background-color: #218838;
-}
-
-.tree-display-container {
-    text-align: center;
-    margin-top: 20px;
 }
 
 .tree-visualization {
@@ -110,8 +124,8 @@
 
 .node-children {
     display: flex;
-    justify-content: center; /* Center align child nodes */
-    margin-top: 20px; /* Space between parent and children */
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .child-node {
