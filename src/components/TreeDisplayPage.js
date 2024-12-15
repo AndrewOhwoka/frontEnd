@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import "./TreeDisplayPage.css";
 
 const TreeDisplayPage = () => {
-    const { state } = useLocation(); // Get the tree data passed via navigate state
+    const { state } = useLocation(); 
     const navigate = useNavigate();
     const tree = state?.tree;
 
@@ -26,7 +26,6 @@ const TreeDisplayPage = () => {
                 <button className="back" onClick={handleBack}>Back to Input</button>
             </div>
         </div>
-        
     );
 };
 
