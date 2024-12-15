@@ -38,7 +38,7 @@ export const NumberInputForm = () => {
           "http://localhost:8080/binary_tree/process-numbers",
           updatedFormData
         );
-        // Navigate to the new page and pass the tree data via state
+        
         navigate("/tree-display", { state: { tree: response.data } });
       } catch (error) {
         console.error("Error processing numbers:", error);
